@@ -533,7 +533,7 @@ void Player::applyDetection(void)
 void Player::initParameters()
 {
       	//video context
-      	sws_ctx = sws_getContext(250, pCodecCtx->height,
+      	sws_ctx = sws_getContext(pCodecCtx->width, pCodecCtx->height,
                   pCodecCtx->pix_fmt, pCodecCtx->width, pCodecCtx->height,
                   AV_PIX_FMT_YUV420P,
                   SWS_BILINEAR,
